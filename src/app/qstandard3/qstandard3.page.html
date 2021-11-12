@@ -1,0 +1,383 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/Goodluck.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="pastel">
+  <ion-list color="pastel">
+    <ion-radio-group [(ngModel)]="soalan1">
+      <ion-list-header>
+        <ion-label><h2>1.What is the 3x5 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">15
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">15</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>18
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>21
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>24
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan2">
+      <ion-list-header>
+        <ion-label><h2>2.What is 7x4 ?</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>21
+           </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">28
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">28</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>35
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>42
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan3">
+      <ion-list-header>
+        <ion-label><h2>3.What is 12÷3 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan3">4
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan3">4</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>5
+         </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan4">
+      <ion-list-header>
+        <ion-label><h2>4.What is 18÷3 ?</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>5
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan4">6
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">6</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan5">
+      <ion-list-header>
+        <ion-label><h2>5.What is 10x3 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>10
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>20
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan5">30
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan5">30</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>40
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan6">
+      <ion-list-header>
+        <ion-label><h2>6.What is 21÷3 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan6">7
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan6">7</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>8
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>9
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan7">
+      <ion-list-header>
+        <ion-label><h2>7.What is 30÷3 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>8
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>9
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan7">10
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan7">10</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>11
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan8">
+      <ion-list-header>
+        <ion-label><h2>8.What is 12x4 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>24
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>36
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan8">48
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan8">48</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>60
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan9">
+      <ion-list-header>
+        <ion-label><h2>9.What is 15x6 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>60
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>75
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan9">90
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan9">90</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>105
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan10">
+      <ion-list-header>
+        <ion-label><h2>10.What is 100÷5?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan10">20
+        </ion-label>
+        <ion-label color="danger" [hidden]="!jawapan10">20</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>19
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>18
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>17
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+<ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+  Semakan
+</ion-button>
+<ion-card>
+  <ion-label>
+    <h2>Keputusan:{{total}} /10</h2>
+    </ion-label>
+</ion-card>
+</ion-content>

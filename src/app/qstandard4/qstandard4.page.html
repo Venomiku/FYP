@@ -1,0 +1,389 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/Goodluck.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="pastel">
+  <ion-list color="pastel">
+    <ion-radio-group [(ngModel)]="soalan1">
+      <ion-list-header>
+        <ion-label><h2>1.What is the 1/5 + 3/5 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">4/5
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">4/5</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3/5
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2/5
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>1/5
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan2">
+      <ion-list-header>
+        <ion-label><h2>2.What is 2/7 + 3/7 ?</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4/7
+           </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">5/7
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">5/7</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6/7
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>7/7
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan3">
+      <ion-list-header>
+        <ion-label><h2>3.What is the shape below called ?
+          <img src="assets/square.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>triangle
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>cube
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan3">square
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan3">square</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>circle
+         </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan4">
+      <ion-list-header>
+        <ion-label><h2>4.What is the shape bellow called ?
+          <img src="assets/cube.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>cylinder
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>globe
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>pyramid
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan4">cube
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">cube</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan5">
+      <ion-list-header>
+        <ion-label><h2>5.What is 2/5 + 2/4 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4/5
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4/4
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan5">9/10
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan5">9/10</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>16/20
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan6">
+      <ion-list-header>
+        <ion-label><h2>6.What is 1/3 + 1/4 ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2/3
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan6">7/12
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan6">7/12</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2/4
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3/5
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan7">
+      <ion-list-header>
+        <ion-label><h2>7.How many sides do the shape below have ?
+          <img src="assets/square.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan7">4
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan7">4</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>5
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan8">
+      <ion-list-header>
+        <ion-label><h2>8.How many surfaces do that shape have ?
+          <img src="assets/cylinder1.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>1
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>2
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan8">3
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan8">3</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan9">
+      <ion-list-header>
+        <ion-label><h2>9.How many flat surface do that shape have ?
+          <img src="assets/pyramid.png" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>4
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan9">5
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan9">5</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan10">
+      <ion-list-header>
+        <ion-label><h2>10.What is 4/5 + 2/4?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan10">13/10
+        </ion-label>
+        <ion-label color="danger" [hidden]="!jawapan10">13/10</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>9/9
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>9/4
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>9/5
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+<ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+  Semakan
+</ion-button>
+<ion-card>
+  <ion-label>
+    <h2>Keputusan:{{total}} /10</h2>
+    </ion-label>
+</ion-card>
+</ion-content>

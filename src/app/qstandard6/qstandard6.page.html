@@ -1,0 +1,395 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/Goodluck.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="pastel">
+  <ion-list color="pastel">
+    <ion-radio-group [(ngModel)]="soalan1">
+      <ion-list-header>
+        <ion-label><h2>1.What time is shown below ?
+          <img src="assets/clock.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">2.30
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">2.30</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3.30
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6.10
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6.30
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan2">
+      <ion-list-header>
+        <ion-label><h2>2.What time is shown below ?
+          <img src="assets/clock1.png" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>3.15
+           </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">3.00
+      </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">3.00</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>12.15
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>12.30
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan3">
+      <ion-list-header>
+        <ion-label><h2>3.What is the value of the currency shown ?
+          <img src="assets/money1.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>1 cent
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>10 cent
+        </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan3">RM 1
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan3">RM 1</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM 10
+         </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan4">
+      <ion-list-header>
+        <ion-label><h2>4.What is the value of the currency shown ?
+          <img src="assets/money2.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM 1
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM100
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>10 cents
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan4">RM10
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">RM10</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan5">
+      <ion-list-header>
+        <ion-label><h2>5.What is 4pm in 24 hour time?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>14.00
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>15.00
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan5">16.00
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan5">16.00</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>17.00
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan6">
+      <ion-list-header>
+        <ion-label><h2>6.What is 10pm in 24 hour time ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>21.00
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan6">22.00
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan6">22.00</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>23.00
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>24.00
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan7">
+      <ion-list-header>
+        <ion-label><h2>7.What is the value shown below ?
+          <img src="assets/money3.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>60 cent
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>70 cent
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan7">80 cent
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan7">80 cent</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>90 cent
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan8">
+      <ion-list-header>
+        <ion-label><h2>8.What is the value shown below ?
+          <img src="assets/money4.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label><img src="assets/money6.jpg" class="ion-text-center" >
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label><img src="assets/money7.jpg" class="ion-text-center" >
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan8"><img src="assets/money5.jpg" class="ion-text-center" >
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan8">
+          <img src="assets/money5.jpg" class="ion-text-center" >
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label><img src="assets/money8.jpg" class="ion-text-center" >
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan9">
+      <ion-list-header>
+        <ion-label><h2>9.What time is 18.30 in am pm clock ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>18.30 am
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>18.30 pm
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan9">6.30 pm
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan9">6.30 pm</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>6.30 am
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan10">
+      <ion-list-header>
+        <ion-label><h2>10.Nik has RM 20. He spent RM 8 for a burger.
+          <br> How much money does he have left ?
+          <img src="assets/burger.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan10">RM 12
+        </ion-label>
+        <ion-label color="danger" [hidden]="!jawapan10">RM 12</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM 11
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM 8
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>RM 10
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+<ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+  Semakan
+</ion-button>
+<ion-card>
+  <ion-label>
+    <h2>Keputusan:{{total}} /10</h2>
+    </ion-label>
+</ion-card>
+</ion-content>
